@@ -1,5 +1,5 @@
 const searchInput = document.getElementById("search-input");
-const apiKey =   "AIzaSyBaQREIuXrw9-EeVxCgPmjD4CsqhVlwVKM"
+const apiKey =   "AIzaSyA8AVxQdFymHauVcQP4UDrPPAQ6I8T-kyQ" ;
 // "AIzaSyA8AVxQdFymHauVcQP4UDrPPAQ6I8T-kyQ" 
 localStorage.setItem("api_key" , apiKey);
 const container = document.getElementById("container");
@@ -107,7 +107,7 @@ function navigateToVideo(videoId){
 
     document.cookie = `video_id= ${videoId} ; path=${path}`
     let linkItem =document.createElement("a");
-    linkItem.href="http://127.0.0.1:5500/YouTube%20clone/video.html";
+    linkItem.href="/video.html";
     linkItem.target="_blank";
     linkItem.click();
 
